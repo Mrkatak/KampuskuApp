@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_namaUnivDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Univ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkBlue"/>
+
+    <TextView
+        android:id="@+id/tv_Fakultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fakultas : "
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_namaUnivDetail"/>
+
+    <TextView
+        android:id="@+id/jml_FakultasDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jmlFakultas"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/darkBlue"
+        android:layout_below="@id/tv_namaUnivDetail"
+        android:layout_toRightOf="@+id/tv_Fakultas"
+        tools:ignore="NotSibling" />
+
+<TextView
+        android:id="@+id/tv_Prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prodi: "
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/jml_FakultasDetail"
+        android:layout_below="@id/tv_namaUnivDetail"/>
+
+    <TextView
+        android:id="@+id/jml_ProdiDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jmlProdi"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/darkBlue"
+        android:layout_below="@id/tv_namaUnivDetail"
+        android:layout_toRightOf="@id/tv_Prodi"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/tv_Favorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jurusan Favorit"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_Fakultas"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/darkBlue"/>
+
+    <TextView
+        android:id="@+id/nama_favoritDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Favorit"
+        android:text="favoritJurusan"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_univ"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_namaUniv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Univ"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkBlue"/>
+
+        <TextView
+            android:id="@+id/tv_Fakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fakultas : "
+            android:textSize="12sp"
+            android:layout_below="@id/tv_namaUniv"/>
+
+        <TextView
+            android:id="@+id/jml_Fakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jmlFakultas"
+            android:textSize="12sp"
+            android:textColor="@color/darkBlue"
+            android:layout_below="@id/tv_namaUniv"
+            android:layout_toRightOf="@+id/tv_Fakultas"/>
+
+        <TextView
+            android:id="@+id/tv_Prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Prodi : "
+            android:textSize="12sp"
+            android:layout_below="@id/tv_namaUniv"
+            android:layout_toRightOf="@id/jml_Fakultas"/>
+
+        <TextView
+            android:id="@+id/jml_Prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jmlProdi"
+            android:textSize="12sp"
+            android:textColor="@color/darkBlue"
+            android:layout_below="@id/tv_namaUniv"
+            android:layout_toRightOf="@id/tv_Prodi"/>
+
+        <TextView
+            android:id="@+id/tv_Favorit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan Favorit"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_Fakultas"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/darkBlue"/>
+
+        <TextView
+            android:id="@+id/nama_favorit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_Favorit"
+            android:text="favoritJurusan"
+            android:textSize="12sp"
+            android:textColor="@color/darkBlue"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
