@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +15,22 @@ import java.util.List;
 public class homeActivity extends AppCompatActivity {
 
     List<univModel> elements;
+    LinearLayout layoutUGM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        layoutUGM = findViewById(R.id.layoutUGM);
+
+        layoutUGM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), UgmActivity.class);
+                startActivity(intent);
+            }
+        });
 
         addData();
     }
@@ -25,7 +38,7 @@ public class homeActivity extends AppCompatActivity {
     private void addData() {
         elements = new ArrayList<>();
         elements.add(new univModel("Universitas Gajah Mada", "18","93","Farmasi"));
-        elements.add(new univModel("Universitas Gajah Mada", "18","93","Farmasi"));
+        elements.add(new univModel("Universitas Negeri Yogyakarta", "20","90","PGSD"));
         elements.add(new univModel("Universitas Gajah Mada", "18","93","Farmasi"));
 
         UnivAdapter adapter = new UnivAdapter(elements,this, new UnivAdapter.OnItemClickListener() {
@@ -46,6 +59,8 @@ public class homeActivity extends AppCompatActivity {
         intent.putExtra("univModel", item);
         startActivity(intent);
     }
+
+
 
 
 }

@@ -22,7 +22,7 @@ public class UnivAdapter extends RecyclerView.Adapter<UnivAdapter.UnivViewHolder
         this.mInflater = layoutInflater.from(context);
         this.univModelList = univModelList;
         this.context = context;
-        this.listener = listener;
+        this.listener = onItemClickListener;
     }
 
     @NonNull

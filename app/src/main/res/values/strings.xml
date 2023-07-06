@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">KampuskuApp</string>
     <string name="Slogan">Informasi tentang mata kuliah,\n prodi dan kampus</string>
+    <string name="Detail_UGM">Universitas Gadjah Mada lahir dari
+kancah perjuangan revolusi kemerdekaan bangsa Indonesia. Didirikan pada periode
+awal kemerdekaan,UGM didaulat sebagai Balai Nasional  Ilmu Pengetahuan dan Kebudayaan bagi penyelenggaraan pendidikan tinggi nasional.
+Berdiri dengan nama “Universitas Negeri Gadjah Mada”, perguruan tinggi ini merupakan gabungan dari beberapa sekolah tinggi yang telah lebih dulu didirikan, di antaranya Balai Perguruan Tinggi gadjah Mada, Sekolah Tinggi Teknik,dan Akademik Ilmu Politik yang terletak di Yogyakarta, Balai Pendidikan Ahli Hukum di Solo, serta Perguruan Tinggi kedokteran Bagian Praklinis di Klaten, yang disahkan dengan Peraturan Pemerintah No. 23 Tahun 1949 tentang Peraturan Penggabungan Perguruan Tinggi menjadi Universiteit</string>
 
 </resources>
