@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".PsikologiFragment"
+    android:layout_margin="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/img_psikologi"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Psikologi UGM"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/DeskripsiPsikologi"/>
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Pengantar Psikologi: Mata kuliah ini memberikan gambaran umum tentang bidang psikologi, termasuk sejarah, pendekatan teoritis, dan metode penelitian dalam psikologi."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2. Psikologi Perkembangan: Mata kuliah ini membahas mengenai perkembangan manusia dari masa bayi hingga dewasa, termasuk perkembangan fisik, kognitif, sosial, dan emosional."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="3. Psikologi Sosial: Mata kuliah ini mempelajari interaksi sosial antara individu dan kelompok, serta bagaimana faktor sosial mempengaruhi sikap, perilaku, dan pola pikir seseorang."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="4. Psikologi Kepribadian: Mata kuliah ini membahas tentang teori kepribadian dan bagaimana faktor-faktor seperti genetik, lingkungan, dan budaya mempengaruhi pembentukan kepribadian individu."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="5. Psikologi Abnormal: Mata kuliah ini mengkaji gangguan psikologis dan gangguan mental, termasuk gejala, diagnosis, dan pendekatan pengobatan yang relevan."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="6. Psikometri: Mata kuliah ini mempelajari pengukuran psikologis dan metodologi penelitian dalam psikologi, termasuk pengembangan dan penggunaan tes psikologis serta analisis data."/>
+
+
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="kembali"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

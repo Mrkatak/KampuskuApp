@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".UgmActivity">
 
-    <LinearLayout
+
+    <FrameLayout
+        android:id="@+id/contentUGM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
         android:id="@+id/headerDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,12 +37,14 @@
             android:textSize="20sp"
             android:textColor="@color/gray"/>
 
-    </LinearLayout>
+        </LinearLayout>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/headerDetail"
+        android:layout_marginTop="70dp"
         >
 
         <LinearLayout
@@ -180,6 +188,8 @@
 
 
     </ScrollView>
+
+    </FrameLayout>
 
 
 
