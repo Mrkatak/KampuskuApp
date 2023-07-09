@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".IlmuPanganFragment"
+    android:layout_margin="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:src="@drawable/img_ilmupangan"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Ilmu dan Teknologi Pangan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkBlue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/DeskripsiIlmuPangan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Kimia Pangan: Mata kuliah ini membahas komposisi kimia dari berbagai bahan pangan, reaksi kimia yang terjadi selama proses pengolahan pangan, serta dampaknya terhadap kualitas dan keamanan pangan."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2. Mikrobiologi Pangan: Mata kuliah ini mempelajari mikroorganisme yang terkait dengan pangan, termasuk bakteri, jamur, virus, dan parasit. Dalam mata kuliah ini, mahasiswa mempelajari deteksi, identifikasi, dan pengendalian mikroorganisme dalam proses pengolahan pangan."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="3. Teknologi Pengolahan Pangan: Mata kuliah ini membahas prinsip-prinsip dasar dan teknologi yang terkait dengan pengolahan makanan, seperti pengolahan daging, susu, buah, sayuran, dan biji-bijian. Mahasiswa mempelajari teknik pengawetan, pengemasan, dan pengolahan termal."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="4. Analisis Pangan: Mata kuliah ini fokus pada metode analisis untuk mengevaluasi komposisi kimia, keamanan mikrobiologi, dan kualitas sensorik dari pangan. Mahasiswa akan belajar tentang teknik analisis laboratorium untuk memeriksa kandungan nutrisi, residu pestisida, dan kontaminan lainnya dalam pangan."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="5. Teknologi Fermentasi: Mata kuliah ini membahas prinsip-prinsip dan aplikasi teknologi fermentasi dalam pengolahan pangan, seperti produksi roti, bir, keju, dan yogurt. Mahasiswa akan mempelajari mikroorganisme yang terlibat dalam proses fermentasi dan pengendalian kondisi fermentasi."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="6. Kemasan Pangan: Mata kuliah ini membahas tentang desain kemasan yang tepat untuk makanan, termasuk keamanan, daya tahan, dan aspek estetika. Mahasiswa akan mempelajari berbagai jenis kemasan, bahan kemasan, serta teknologi pengemasan yang inovatif."/>
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="kembali"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

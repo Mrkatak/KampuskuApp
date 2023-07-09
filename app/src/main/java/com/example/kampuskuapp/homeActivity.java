@@ -1,21 +1,28 @@
 package com.example.kampuskuapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class homeActivity extends AppCompatActivity {
+public class homeActivity extends AppCompatActivity
+        implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    BottomNavigationView bottomNavigationView;
 
     List<univModel> elements;
-    LinearLayout layoutUGM;
+    LinearLayout layoutUGM, layoutUNY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +30,25 @@ public class homeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         layoutUGM = findViewById(R.id.layoutUGM);
+        layoutUNY = findViewById(R.id.layoutUNY);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView
+                .setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
 
         layoutUGM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), UgmActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        layoutUNY.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), UnyActivity.class);
                 startActivity(intent);
             }
         });
@@ -61,6 +82,17 @@ public class homeActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.home) {
+            return true;
 
+        }else if (item.getItemId() == R.id.rating){
+            startActivity(new Intent(getApplicationContext(), RankingActivity.class));
+        }else if (item.getItemId() == R.id.person) {
+            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+        }
 
+        return false;
+    }
 }

@@ -3,7 +3,11 @@
     <style name="Base.Theme.KampuskuApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#36539C</item>
+        <item name="colorPrimaryDark">#4C5668</item>
+        <item name="colorAccent">#83CBFB</item>
     </style>
 
     <style name="Theme.KampuskuApp" parent="Base.Theme.KampuskuApp" />
+
 </resources>

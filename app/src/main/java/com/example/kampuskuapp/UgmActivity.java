@@ -17,7 +17,8 @@ public class UgmActivity extends AppCompatActivity {
     ImageView ArrowBack;
     TextView tvWebUGM;
 
-    Button btnPsikologi;
+    Button btnPsikologi, btnIlmuPangan, btnAgribisnis, btnTeknikPertanian, btnIlmuHukum ;
+
 
 
     @Override
@@ -28,6 +29,8 @@ public class UgmActivity extends AppCompatActivity {
         ArrowBack = findViewById(R.id.icArrowback);
         tvWebUGM = findViewById(R.id.tvWebUGM);
         btnPsikologi= findViewById(R.id.btnPsikologi);
+        btnIlmuPangan = findViewById(R.id.btnIlmuPangan);
+
 
         ArrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,5 +60,16 @@ public class UgmActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.contentUGM, fragment).commit();
             }
         });
+
+        btnIlmuPangan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new IlmuPanganFragment();
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.contentUGM, fragment).commit();
+            }
+        });
+
+        
     }
 }

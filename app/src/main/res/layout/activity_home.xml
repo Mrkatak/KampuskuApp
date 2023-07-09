@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    android:padding="20dp"
     tools:context=".homeActivity">
 
 
@@ -13,7 +12,8 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <ImageView
             android:id="@+id/logoKampusku"
@@ -133,6 +133,7 @@
 
 <!--Kategori UNY-->
                 <LinearLayout
+                    android:id="@+id/layoutUNY"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -269,11 +270,19 @@
         android:id="@+id/rvUniv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/header">
-
-
+        android:layout_below="@id/header"
+        android:layout_above="@id/bottomNavigationView"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"/>
     
 
 
