@@ -7,7 +7,7 @@
     tools:context=".UnyActivity">
 
     <FrameLayout
-        android:id="@+id/contentUGM"
+        android:id="@+id/contentUNY"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -134,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Fakultas Teknologi Pertanian"
+                    android:text="Fakultas Bahasa, Seni dan Budaya"
                     />
 
                 <HorizontalScrollView
@@ -147,24 +147,24 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/btnIlmuPangan"
+                            android:id="@+id/btnSastraIndo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ilmu dan Teknologi Pangan"
+                            android:text="Sastra Indonesia"
                             android:layout_marginEnd="8dp"/>
 
                         <Button
-                            android:id="@+id/btnAgribisnis"
+                            android:id="@+id/btnPSeniRupa"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Agribisnis"
+                            android:text="Pendidikan Seni Rupa"
                             android:layout_marginEnd="8dp"/>
 
                         <Button
-                            android:id="@+id/btnTeknikPertanian"
+                            android:id="@+id/btnPInggris"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Teknik Pertanian"
+                            android:text="Pendidikan Bahasa Inggris"
                             android:layout_marginEnd="8dp"/>
 
                     </LinearLayout>
@@ -175,7 +175,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Fakultas Hukum"
+                    android:text="Fakultas Teknik"
                     />
 
                 <HorizontalScrollView
@@ -188,10 +188,10 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/btnIlmuHukum"
+                            android:id="@+id/btnElektro"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ilmu Hukum"/>
+                            android:text="Teknik Elektro"/>
 
                     </LinearLayout>
 

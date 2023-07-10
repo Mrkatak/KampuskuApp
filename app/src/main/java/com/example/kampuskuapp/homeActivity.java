@@ -60,7 +60,10 @@ public class homeActivity extends AppCompatActivity
         elements = new ArrayList<>();
         elements.add(new univModel("Universitas Gajah Mada", "18","93","Farmasi"));
         elements.add(new univModel("Universitas Negeri Yogyakarta", "20","90","PGSD"));
-        elements.add(new univModel("Universitas Gajah Mada", "18","93","Farmasi"));
+        elements.add(new univModel("Universitas Indonesia", "17","291","Farmasi"));
+        elements.add(new univModel("Institut Teknologi Bandung", "17","121","Farmasi"));
+        elements.add(new univModel("Institut Pertanian Bogor", "9","170","Farmasi"));
+        elements.add(new univModel("Universitas Muhammadiyah Yogyakarta", "10","41","Farmasi"));
 
         UnivAdapter adapter = new UnivAdapter(elements,this, new UnivAdapter.OnItemClickListener() {
             @Override

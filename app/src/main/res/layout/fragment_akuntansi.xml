@@ -3,15 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".AkuntansiFragment"
     android:background="@color/bg_color"
-    tools:context=".PsikologiFragment"
-    android:layout_margin="20dp">
+    android:padding="20dp"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,14 +22,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="130dp"
-                android:src="@drawable/img_psikologi"/>
+                android:src="@drawable/img_akuntansi"/>
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Psikologi UGM"
+                android:text="Pendidikan Akuntansi"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/darkBlue"/>
@@ -37,45 +38,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/DeskripsiPsikologi"/>
+                android:text="@string/DeskripsiAkuntansi"/>
 
-             <TextView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="1. Pengantar Psikologi: Mata kuliah ini memberikan gambaran umum tentang bidang psikologi, termasuk sejarah, pendekatan teoritis, dan metode penelitian dalam psikologi."/>
+                android:text="1. Dasar-dasar Akuntansi: Mahasiswa akan mempelajari prinsip-prinsip dasar akuntansi, seperti siklus akuntansi, klasifikasi akun, jurnal, buku besar, dan laporan keuangan. Mereka juga akan memahami prinsip-prinsip pengukuran dan pengakuan transaksi keuangan."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="2. Psikologi Perkembangan: Mata kuliah ini membahas mengenai perkembangan manusia dari masa bayi hingga dewasa, termasuk perkembangan fisik, kognitif, sosial, dan emosional."/>
+                android:layout_marginTop="16dp"
+                android:text="2. Akuntansi Keuangan: Mahasiswa akan mempelajari konsep-konsep dasar dalam akuntansi keuangan, termasuk penyusunan laporan keuangan, analisis laporan keuangan, dan interpretasi informasi keuangan."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="3. Psikologi Sosial: Mata kuliah ini mempelajari interaksi sosial antara individu dan kelompok, serta bagaimana faktor sosial mempengaruhi sikap, perilaku, dan pola pikir seseorang."/>
+                android:layout_marginTop="16dp"
+                android:text="3.Akuntansi Manajemen: Mahasiswa akan mempelajari topik-topik terkait akuntansi manajemen, seperti biaya produksi, analisis biaya-volumelaba, anggaran, pengambilan keputusan, dan pengendalian manajemen."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="4. Psikologi Kepribadian: Mata kuliah ini membahas tentang teori kepribadian dan bagaimana faktor-faktor seperti genetik, lingkungan, dan budaya mempengaruhi pembentukan kepribadian individu."/>
+                android:layout_marginTop="16dp"
+                android:text="4.Pajak: Mahasiswa akan mempelajari prinsip-prinsip dasar dan peraturan-peraturan terkait pajak, termasuk perhitungan dan pelaporan pajak bagi individu dan perusahaan."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="5. Psikologi Abnormal: Mata kuliah ini mengkaji gangguan psikologis dan gangguan mental, termasuk gejala, diagnosis, dan pendekatan pengobatan yang relevan."/>
+                android:layout_marginTop="16dp"
+                android:text="5.Audit: Mahasiswa akan mempelajari prinsip-prinsip dasar audit, prosedur audit, serta standar dan etika audit. Mereka akan memahami pentingnya audit dalam memastikan keandalan informasi keuangan."/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="6. Psikometri: Mata kuliah ini mempelajari pengukuran psikologis dan metodologi penelitian dalam psikologi, termasuk pengembangan dan penggunaan tes psikologis serta analisis data."/>
-
-
+                android:layout_marginTop="16dp"
+                android:text="Perlu dicatat bahwa konten mata kuliah dapat bervariasi antara satu perguruan tinggi dengan yang lain, dan beberapa topik di atas mungkin tidak termasuk dalam setiap program studi pendidikan akuntansi. Oleh karena itu, sebaiknya merujuk pada silabus resmi mata kuliah yang ditawarkan oleh perguruan tinggi yang bersangkutan untuk mendapatkan informasi yang lebih terperinci."/>
 
             <Button
                 android:id="@+id/btnback"
@@ -87,12 +86,6 @@
                 />
 
         </LinearLayout>
-
-
-
     </ScrollView>
-
-
-
 
 </RelativeLayout>
